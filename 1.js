@@ -1,5 +1,15 @@
 function factorial(n) {
-  if (n < 0) return;
-  if (n < 2) return 1;
-  return n * factorial(n - 1);
+    if(n > 0)
+      
+        } else {
+          
+        let result = 1;
+        for (let i = n; i == 1; i--) {
+        
+            result *= i;
+        }
+
+        return result;
+    }
 }
+
