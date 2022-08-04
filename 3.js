@@ -1,10 +1,10 @@
 function largestOf(arr) {
-  var max;
-  var largestArray = [];
+  let max;
+  let largestArray = [];
 
-  for (var i = 0; i < arr.length; i++) { // длина arr - это количество подмассивов
+  for (let i = 0; i < arr.length; i++) { // длина arr - это количество подмассивов
     max = -Infinity; // max должен быть повторно инициализирован до наименьшего числа в каждом цикле
-    for (var j = 0; j < arr[i].length; j++) { // длина - это количество элементов в подмассиве
+    for (let j = 0; j < arr[i].length; j++) { // длина - это количество элементов в подмассиве
       if (arr[i][j] > max) { // просто обновляет max до большего числа
         max = arr[i][j];
       }
@@ -14,7 +14,8 @@ function largestOf(arr) {
   }
 
   return largestArray; // возвращает самый большой массив
+}
 
-var result = largestOf([[4, 5, 1, 13], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+let result = largestOf([[4, 5, 1, 13], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
 
 console.log(result);
