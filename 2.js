@@ -1,13 +1,9 @@
-function longestWord(string) {
-    let str = string.split(" ");
-    let longest = 0;
-    let word = null;
-    for (let i = 0; i < str.length; i++) {
-        if (longest < str[i].length) {
-            longest = str[i].length;
-            word = str[i];
-        }
-    }
-    return word;
+function LongestWord(str) {   
+   let array = str.split(/\s+/);
+   let wordLength = array.map(function(i) {
+     return i.length;                       
+   });   
+   let largest = Math.max.apply(Math, wordLength);   
+   return largest; 
 }
-console.log( longestWord(""))
+console.log(LongestWord(" "))
