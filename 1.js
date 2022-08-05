@@ -1,10 +1,10 @@
 function factorial(n) {
-    if(n > 0)
-      
+        if(n == 0){
+    
+        return 1;
         } else {
-          
         let result = 1;
-        for (let i = n; i == 1; i--) {
+        for (let i = 1; i <= n; i++) {
         
             result *= i;
         }
@@ -12,4 +12,4 @@ function factorial(n) {
         return result;
     }
 }
-
+console.log(factorial(0))
